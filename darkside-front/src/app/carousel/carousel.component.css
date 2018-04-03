@@ -1,0 +1,10 @@
+#mainSlide {
+  background: url('../../assets/images/background.jpg');
+  background-size: cover;
+}
+
+h3 {
+  font-family: daysLater;
+  font-size: 2em;
+}
+

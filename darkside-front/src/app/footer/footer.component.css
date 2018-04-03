@@ -1,0 +1,10 @@
+.footer-copyright {
+  background-color: #1C2331;
+  color: white;
+}
+
+a {
+  color: #33b5e5;
+  text-transform: uppercase;
+  font-weight: bolder;
+}

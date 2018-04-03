@@ -1,0 +1,61 @@
+/* Required height of parents of the Full Page Carousel for proper displaying carousel itself */
+@font-face {
+  font-family: daysLater;
+  src: url(font/28_days_later/28_Days_Later.ttf);
+}
+
+
+html,
+body,
+.view {
+  height: 100%; }
+
+/* Full Page Carousel itself*/
+.carousel {
+  height: 100%; }
+.carousel .carousel-inner {
+  height: 100%; }
+.carousel .carousel-inner .carousel-item,
+.carousel .carousel-inner .active {
+  height: 100%; }
+
+/* Navbar animation */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.2); }
+
+.top-nav-collapse {
+  background-color: #1C2331; }
+
+/* Adding color to the Navbar on mobile */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #1C2331; }
+}
+
+
+/* Button */
+
+.buttonBook{ color: #000; background-color: #e0e0e0 ; text-decoration: none; text-transform: uppercase; font-family: 'Roboto', sans-serif; letter-spacing: 4px; font-weight: 700; position: relative; z-index:2; -webkit-transition: all .6s; -moz-transition: all .6s; -o-transition: all .6s; transition: all .6s; text-align: center; margin: 0 auto; padding: 15px 20px 15px 25px; }
+
+.buttonBook::after{ content:''; position: absolute; height:5px; width: 20px; background-color: #CB3B32; bottom: -8px; left:0; right: 0; margin: 0 auto; z-index:-1; text-align:center; animation: minify .6s; animation-fill-mode: forwards; }
+
+.buttonBook:hover{ color: black; }
+
+.buttonBook:hover:after { animation: expand .6s; animation-fill-mode: forwards;  }
+
+@keyframes expand {
+  0% { height: 5px; width:34px; }
+  50% { height: 68px; width:68px; }
+  100% { height: 68px; width: 100%; left:-10px; right:-10px; background-color: #CB3B32; }
+}
+
+@keyframes minify {
+  0% { height: 68px; width: 100%; left:-10px; right:-10px; background-color: white; }
+  50% { height: 68px; width:68px; }
+  100% { height: 5px; width:34px; background-color: #CB3B32; }
+}
+
+section {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}

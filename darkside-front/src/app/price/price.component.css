@@ -1,0 +1,118 @@
+.pricing {
+  width: 100%;
+  font-size: 0;
+  opacity: 1;
+  -webkit-transition: opacity .2s ease;
+  transition: opacity .2s ease;
+}
+
+.price-option {
+  display: inline-block;
+  width: 24%;
+  vertical-align: middle;
+  margin: 0.5%;
+  font-size: 16px;
+  opacity: 1;
+  -webkit-transition: opacity .2s ease;
+  transition: opacity .2s ease;
+}
+.price-option:last-child {
+  margin-right: 0;
+}
+
+.pricing:hover .price-option {
+  opacity: 0.6;
+}
+
+.pricing:hover .price-option:hover {
+  opacity: 1;
+}
+
+.price-option__detail {
+  padding: 2em 0;
+  background: #efefef;
+  text-align: center;
+}
+
+.price-option--low,.price-option--low--mid, .price-option--mid, .price-option--high,  .price-option__detail {
+  padding: 3.3em 0;
+  border-radius: .25em .25em 0 0;
+}
+
+.price-option__cost,
+.price-option__type {
+  display: block;
+}
+
+.price-option__cost {
+  font-size: 1.5em;
+  color: #383838;
+}
+
+.price-option__type {
+  font-size: .7em;
+  text-transform: uppercase;
+  color: #909090;
+}
+
+.price-option__purchase {
+  position: relative;
+  display: block;
+  padding: 1.1em;
+  font-size: .875em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+.price-option--low .price-option__purchase {
+  background: #ff4444;
+  border-radius: 0 0 0 .25em;
+}
+
+.price-option--low--mid .price-option__purchase {
+  background: #FF8800;
+  border-radius: 0 0 0 .25em;
+}
+
+
+.price-option--mid .price-option__purchase {
+  background: #0099CC;
+  border-radius: 0 0 .25em .25em;
+}
+
+.price-option--high .price-option__purchase {
+  background: #00C851;
+  border-radius: 0 0 .25em 0;
+}
+
+.price-option__purchase:before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  display: block;
+  width: 0;
+  height: 0;
+  margin-left: -5px;
+  border-width: 0 5px 5px;
+  border-style: solid;
+}
+
+.price-option--low .price-option__purchase:before {
+  border-color: transparent transparent #ff4444;
+}
+
+.price-option--mid .price-option__purchase:before {
+  border-color: transparent transparent #0099CC;
+}
+
+.price-option--low--mid .price-option__purchase:before {
+  border-color: transparent transparent #FF8800;
+}
+
+.price-option--high .price-option__purchase:before {
+  border-color: transparent transparent #00C851;
+}

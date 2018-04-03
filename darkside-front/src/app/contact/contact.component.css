@@ -1,0 +1,38 @@
+#contact {
+  background-color: #243a51;
+}
+
+section {
+  margin-bottom: 0;
+}
+
+label {
+  color: white;
+}
+
+
+input:focus:not([readonly])+label{
+color: #e0e0e0;
+}
+
+input:focus:not([readonly]){
+  border-bottom: 1px solid red;
+}
+
+
+textarea:focus:not([readonly])+label{
+  color: #e0e0e0;
+}
+
+.form-control {
+  color: white;
+}
+
+#map {
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+
+section {
+  padding-bottom: 0px;
+}

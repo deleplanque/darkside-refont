@@ -1,0 +1,29 @@
+h4 {
+  text-transform: uppercase;
+}
+
+.card {
+  background-color: rgba(255,255,255,0.95);
+}
+
+.card img {
+  border-radius: .25rem .25rem 0 0;
+  max-width: 80%;
+  margin: auto;
+}
+
+.card .card-body {
+  position: relative;
+  border-top: 1px solid;
+}
+
+@media (min-width: 992px)
+{
+  .col-lg-3 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 23%;
+    margin: 1%;
+  }
+}

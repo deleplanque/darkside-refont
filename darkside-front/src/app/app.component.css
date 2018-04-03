@@ -1,0 +1,9 @@
+.contenue {
+  background: url("../assets/images/backgroundContenue.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.filtre {
+  background-color: rgba(0,0,0,0.4);
+}
