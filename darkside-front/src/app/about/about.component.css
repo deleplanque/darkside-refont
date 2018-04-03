@@ -17,6 +17,13 @@ h4 {
   border-top: 1px solid;
 }
 
+@media (max-width: 576px)
+{
+  .card {
+    margin: 6vw;
+  }
+}
+
 @media (min-width: 992px)
 {
   .col-lg-3 {
@@ -27,3 +34,43 @@ h4 {
     margin: 1%;
   }
 }
+
+
+
+
+@media (max-width: 768px) and (min-width: 992px)
+{
+  .card {
+    width: 46%;
+    margin: 2%;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 768px)
+{
+  .card {
+    width: 46%;
+    margin: 2%;
+  }
+}
+
+
+@media (max-width: 991px) and (min-width: 575px)
+{
+  . {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 23%;
+    margin: 1%;
+  }
+}
+
+/* md = max width :991px
+
+.col - = xs = <576px
+.col-sm = >= 576px
+.col-md= >= 768px
+.col-lg >= 992px
+.col-xl >= 1200px
+*/

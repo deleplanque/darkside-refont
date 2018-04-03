@@ -116,3 +116,13 @@
 .price-option--high .price-option__purchase:before {
   border-color: transparent transparent #00C851;
 }
+
+
+@media (max-width: 450px)
+{
+  .price-option{
+    width: 46%;
+    margin: 2%;
+    padding: 0;
+  }
+}
