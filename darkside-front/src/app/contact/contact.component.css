@@ -10,17 +10,15 @@ label {
   color: white;
 }
 
-
-input:focus:not([readonly])+label{
-color: #e0e0e0;
+input:focus:not([readonly]) + label {
+  color: #e0e0e0;
 }
 
-input:focus:not([readonly]){
+input:focus:not([readonly]) {
   border-bottom: 1px solid red;
 }
 
-
-textarea:focus:not([readonly])+label{
+textarea:focus:not([readonly]) + label {
   color: #e0e0e0;
 }
 

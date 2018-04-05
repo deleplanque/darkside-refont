@@ -16,6 +16,7 @@
   -webkit-transition: opacity .2s ease;
   transition: opacity .2s ease;
 }
+
 .price-option:last-child {
   margin-right: 0;
 }
@@ -34,7 +35,7 @@
   text-align: center;
 }
 
-.price-option--low,.price-option--low--mid, .price-option--mid, .price-option--high,  .price-option__detail {
+.price-option--low, .price-option--low--mid, .price-option--mid, .price-option--high, .price-option__detail {
   padding: 3.3em 0;
   border-radius: .25em .25em 0 0;
 }
@@ -77,7 +78,6 @@
   border-radius: 0 0 0 .25em;
 }
 
-
 .price-option--mid .price-option__purchase {
   background: #0099CC;
   border-radius: 0 0 .25em .25em;
@@ -117,10 +117,8 @@
   border-color: transparent transparent #00C851;
 }
 
-
-@media (max-width: 450px)
-{
-  .price-option{
+@media (max-width: 450px) {
+  .price-option {
     width: 46%;
     margin: 2%;
     padding: 0;
