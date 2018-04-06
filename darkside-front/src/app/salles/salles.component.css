@@ -1,0 +1,135 @@
+/*https://codepen.io/wmcbain/pen/Jopmog?q=detail&limit=all&type=type-pens*/
+
+* {
+  padding: 0;
+  margin: 0;
+  transition: 0.3s all ease;
+}
+
+body {
+  font-family: Avenir, Helvetica, sans-serif;
+  font-size: 62.5%;
+  text-rendering: geometricPrecision;
+}
+
+#wrapper {
+  padding: 2.0em;
+}
+
+.image-box {
+  border: 0.3em solid #000;
+  float: left;
+  margin: 1.0em 1.5%;
+  width: 30.33333334%;
+}
+
+.image-content {
+  overflow: hidden;
+  position: relative;
+}
+
+.image-content img {
+  display: block;
+  width: 100%;
+  transform: rotate(5deg) scale(1.2);
+}
+
+.image-content img.detail-hover-state {
+  transform: none;
+}
+
+.image-content .image-detail {
+  background-color: rgba(40, 47, 55, 0.8);
+  color: #fff;
+  height: 100%;
+  left: 0;
+  padding: 1.0em;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.image-content .image-detail h3 {
+  font-size: 2.0em;
+  font-weight: 500;
+  text-align: right;
+  width: 100%;
+}
+
+.image-content .image-detail .detail-text {
+  bottom: 1.5em;
+  font-size: 1.6em;
+  line-height: 1.2em;
+  position: absolute;
+  width: 95%;
+}
+
+.image-content, .image-content .image-detail {
+  transform: scale(1);
+}
+
+.image-content, .image-content img, .image-content .image-detail {
+  -webkit-backface-visibility: hidden;
+}
+
+.image-content .image-detail, .image-box, .image-content .image-detail .detail-text {
+  box-sizing: border-box;
+  -moz-box-sizing : border-box;
+  -webkit-box-sizing : border-box;
+}
+
+.image-content .button {
+  position: absolute;
+  top: 50%;
+  opacity: 0;
+  z-index: 999;
+  text-align: center;
+  transform: translate(0, -50%);
+  width: 92%;
+}
+
+.image-content .button.show {
+  opacity: 1;
+}
+
+.button {
+  cursor: pointer;
+  font-size: 1.4em;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  padding: 0.7em 1.2em;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.show {
+  opacity: 1;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.btn-normal {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.btn-normal:hover {
+  background-color: rgba(25, 25, 25, 0.5);
+  letter-spacing: 0.2em;
+}
+
+@media all and (max-width: 900px) {
+  .image-box {
+    margin: 1.0em 2.5%;
+    width: 45%;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .image-box {
+    margin: 1.0em 2.5%;
+    width: 95%;
+  }
+}
