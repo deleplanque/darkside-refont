@@ -11,6 +11,7 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { GoogleMapComponent } from './contact/google-map/google-map.component';
 import { SallesComponent } from './salles/salles.component';
+import { SalleComponent } from './salle/salle.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { SallesComponent } from './salles/salles.component';
     ContactComponent,
     FooterComponent,
     GoogleMapComponent,
-    SallesComponent
+    SallesComponent,
+    SalleComponent
   ],
   imports: [
     BrowserModule,

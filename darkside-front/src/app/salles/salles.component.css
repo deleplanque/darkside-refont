@@ -17,7 +17,7 @@ body {
 }
 
 #wrapper {
- /*padding: 2.0em;*/
+  /*padding: 2.0em;*/
 }
 
 .image-box {
@@ -40,7 +40,7 @@ body {
 }
 
 .image-content .image-detail {
-  background-color: rgba(184,184,184,0.2);
+  background-color: rgba(184, 184, 184, 0.2);
   color: #fff;
   height: 100%;
   left: 0;
@@ -78,8 +78,8 @@ body {
 
 .image-content .image-detail, .image-box, .image-content .image-detail .detail-text {
   box-sizing: border-box;
-  -moz-box-sizing : border-box;
-  -webkit-box-sizing : border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 .image-content .button {
@@ -143,7 +143,22 @@ body {
   color: #CB3B32;
 }
 
-.item-salle {
-  width: 46%;
-  margin: 2%;
+@media (min-width: 992px) {
+
+  .item-salle {
+    width: 46%;
+    margin: 2%;
+  }
+}
+
+@media (max-width: 992px) {
+  .item-salle {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .image-box {
+    width: 100%;
+  }
 }
