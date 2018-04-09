@@ -15,6 +15,7 @@
   opacity: 1;
   -webkit-transition: opacity .2s ease;
   transition: opacity .2s ease;
+
 }
 
 .price-option:last-child {

@@ -1,6 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import { WOW } from 'wowjs/dist/wow.min';
 
+declare var $: any;
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,6 +11,11 @@ import { WOW } from 'wowjs/dist/wow.min';
 export class AppComponent implements OnInit {
 
   ngOnInit(): void {
+
+    $(document).ready(function() {
+      $('.parallax').parallax();
+    });
+
     const wow = new WOW(
       {
         boxClass:     'wow',

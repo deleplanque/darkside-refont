@@ -27,6 +27,7 @@
       "scripts": [
         "../node_modules/wowjs/dist/wow.js",
         "../node_modules/mdbootstrap/js/jquery-3.2.1.min.js",
+        "../node_modules/materialize-css/dist/js/materialize.js",
         "../node_modules/mdbootstrap/js/popper.min.js",
         "../node_modules/mdbootstrap/js/bootstrap.min.js",
         "../node_modules/mdbootstrap/js/mdb.min.js"

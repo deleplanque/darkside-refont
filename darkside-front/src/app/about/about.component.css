@@ -3,7 +3,14 @@ h4 {
 }
 
 .card {
-  background-color: rgba(255, 255, 255, 0.95);
+  -webkit-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.12);
+  -moz-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.12);
+  box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.12);
+  -webkit-transition: -webkit-box-shadow .25s;
+  transition: -webkit-box-shadow .25s;
+  transition: box-shadow .25s;
+  transition: box-shadow .25s, -webkit-box-shadow .25s;
+  background-color: rgba(255,255,255,0.85);
 }
 
 .card img {
@@ -25,7 +32,7 @@ h4 {
   .card-sm {
     border: 0;
     border-radius: .25rem;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: ghostwhite;
     margin: 2%;
 
   }
@@ -72,6 +79,10 @@ h4 {
     width: 46%;
     margin: 2%;
   }
+}
+
+.container-fluid {
+  background-color: white;
 }
 
 /* md = max width :991px
