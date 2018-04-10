@@ -10,7 +10,7 @@ h4 {
   transition: -webkit-box-shadow .25s;
   transition: box-shadow .25s;
   transition: box-shadow .25s, -webkit-box-shadow .25s;
-  background-color: rgba(255,255,255,0.85);
+  background-color: rgba(255,255,255,0.95);
 }
 
 .card img {
@@ -24,7 +24,7 @@ h4 {
   border-top: 1px solid;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .about-lg {
     display: none;
   }
@@ -49,9 +49,16 @@ h4 {
   .col-7 {
     margin: auto;
   }
+
+  .container-fluid {
+    width: 94%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0vw;
+  }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 770px) {
   .about-sm {
     display: none;
   }
@@ -81,9 +88,6 @@ h4 {
   }
 }
 
-.container-fluid {
-  background-color: white;
-}
 
 /* md = max width :991px
 

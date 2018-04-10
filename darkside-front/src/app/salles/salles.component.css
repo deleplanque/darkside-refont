@@ -38,7 +38,7 @@ body {
 }
 
 .image-content .image-detail {
-  background-color: rgba(184, 184, 184, 0.2);
+  background-color: rgba(184, 184, 184, 0.4);
   color: #fff;
   height: 100%;
   left: 0;
@@ -57,13 +57,14 @@ body {
 }
 
 .image-content .image-detail .detail-text {
-  bottom: .5em;
+  bottom: .0em;
   font-size: 1em;
   line-height: 1.2em;
   position: absolute;
-  width: 90%;
-  margin-left: 5%;
+  width: 100%;
   text-align: justify;
+  padding: .5em;
+  background: rgba(0,0,0,0.8);
 }
 
 .image-content, .image-content .image-detail {
@@ -139,6 +140,8 @@ body {
 .titre-salle {
   font-family: daysLater;
   color: #CB3B32;
+  font-weight: bolder;
+  background: rgba(0,0,0,0.8);
 }
 
 @media (min-width: 992px) {
@@ -152,6 +155,7 @@ body {
 @media (max-width: 992px) {
   .item-salle {
     width: 100%;
+    margin-top: 4%;
   }
 }
 
@@ -159,4 +163,27 @@ body {
   .image-box {
     width: 100%;
   }
+}
+
+@media all and (max-width: 864px) {
+  .container-fluid {
+    width: 94%;
+    margin-right: 0%;
+    margin-left: 1%;
+    padding: 2vw;
+  }
+}
+
+@media all and (min-width: 864px) {
+  .container-fluid {
+    width: 94%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2vw;
+  }
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0rem;
 }

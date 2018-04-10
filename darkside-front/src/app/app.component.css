@@ -8,28 +8,27 @@
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.titre-partie{
-  text-align: center;
-  color:  #f69e00;
-  padding: 3vw;
-  font-family: daysLater;
-}
 
-.titre-partie h1 {
-  font-size: 6vw;
-}
 
 #about {
-  background: url("../assets/images/escape_2.jpg");
+  background: url("../assets/images/test.jpg");
   background-size: cover;
 }
 
 #salles {
-  background: url("../assets/images/escalier_filtre_2.jpg");
+  background: url("../assets/images/escape_2.jpg");
   background-size: cover;
 }
 
 #price {
   background: url("../assets/images/escalier_filtre_3.jpg");
   background-size: cover;
+}
+
+#map {
+  padding: 0;
+}
+
+.filtre-degrade {
+  background: linear-gradient(black, transparent, black);
 }

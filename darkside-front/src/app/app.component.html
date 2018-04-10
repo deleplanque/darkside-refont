@@ -1,4 +1,6 @@
 <app-navbar></app-navbar>
+
+
 <app-carousel></app-carousel>
 
 <!--<div class="titre-partie">
@@ -6,24 +8,32 @@
 </div>-->
 
 <div id="about">
-  <app-about></app-about>
+  <div class="filtre-degrade">
+    <div class="titre-partie-rouge">
+      <h1>A propos du dark side</h1>
+    </div>
+    <app-about></app-about>
+  </div>
 </div>
 <div id="salles">
-  <app-salles></app-salles>
-</div>
-
-<div class="parallax-container titre-partie">
-  <div class="parallax"><img src="../assets/images/backgroundContenue.jpg">
+  <div class="filtre-degrade">
+    <div class="titre-partie-jaune">
+      <h1>Nos salles</h1>
+    </div>
+    <app-salles></app-salles>
   </div>
-  <h1>Nos tarifs</h1>
 </div>
 <div id="price">
-  <app-price></app-price>
-</div>
-<div class="parallax-container titre-partie">
-  <div class="parallax"><img src="../assets/images/backgroundContenue.jpg">
+  <div class="filtre-degrade">
+    <div class="titre-partie-rouge">
+      <h1>Nos tarifs</h1>
+    </div>
+    <app-price></app-price>
+    <app-contact></app-contact>
   </div>
-  <h1>Nous contacter</h1>
 </div>
-<app-contact></app-contact>
+<div id="map" class="col-12">
+  <app-google-map></app-google-map>
+</div>
+
 <app-footer></app-footer>

@@ -1,10 +1,19 @@
 .footer-copyright {
-  background-color: #1C2331;
+  background: #17263c;
   color: white;
 }
 
+footer {
+  background-color: #1f2835;
+}
+
 a {
-  color: #33b5e5;
+  color: white;
   text-transform: uppercase;
   font-weight: bolder;
+}
+
+h5 {
+  color: dimgrey;
+  font-weight: bold;
 }
