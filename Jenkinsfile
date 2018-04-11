@@ -15,7 +15,7 @@ pipeline {
         label 'master'
       }
       steps {
-        sh 'spring-boot:run'
+        sh 'mvn clean install'
       }
     }
   }
