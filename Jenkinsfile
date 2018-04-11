@@ -23,7 +23,7 @@ pipeline {
 			agent { label 'master' }
 			steps {
 				sh "cd darkside-front && npm install"
-				sh "cd darkside-front && ng build --prod -aot=false"
+				sh "cd darkside-front && npm run build"
 			}
         }
 		
