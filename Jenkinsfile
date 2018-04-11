@@ -30,7 +30,7 @@ pipeline {
         stage('Build - back') {
 			agent { label 'master' }
 			steps {
-				sh "cd darkside-back && spring-boot:run"
+				sh "cd darkside-back && mvn spring-boot:run"
 			}
         }
 		
