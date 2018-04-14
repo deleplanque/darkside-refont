@@ -35,11 +35,11 @@ pipeline {
         }
 		
 
-		stage('Deploy') {
+	/*	stage('Deploy') {
 			agent { label 'master' }
 		    steps {
 					sh "cd darkside-back && docker build -t darkside ."
 				}
-        }
+        }*/
     }
 }
