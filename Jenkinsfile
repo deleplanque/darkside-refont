@@ -6,9 +6,7 @@ def waitingUrl(url) {
 
 pipeline {
 
-    agent {
-		dockerfile true
-	}
+    agent none
 
     stages {
 	
