@@ -12,6 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { GoogleMapComponent } from './contact/google-map/google-map.component';
 import { SallesComponent } from './salles/salles.component';
 import { SalleComponent } from './salle/salle.component';
+import {AppRoutingModule} from './app.routing.module';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { SalleComponent } from './salle/salle.component';
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyDvBFuQQv2YyNAgyM5Hi5c0FBqEyP68x-k'
     })
