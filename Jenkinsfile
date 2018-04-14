@@ -21,7 +21,7 @@ pipeline {
 		}
 			
 		
-	/*	stage('Build - front') {
+		stage('Build - front') {
 			agent { label 'master' }
 			steps {
 				sh "cd darkside-front && npm install"
@@ -34,7 +34,7 @@ pipeline {
 			steps {
 				sh "cd darkside-back && mvn clean install"
 			}
-        }*/
+        }
 		
 
 		stage('Deploy') {
