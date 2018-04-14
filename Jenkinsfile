@@ -40,7 +40,6 @@ pipeline {
 		    steps {
 					sh "cd darkside-back && docker build -t darkside ."
 				}
-            }
-		}
+        }
     }
 }
