@@ -35,14 +35,12 @@ pipeline {
         }
 		
 
-		/*stage('Deploy on Dev') {
+		stage('Deploy') {
 			agent { label 'master' }
 		    steps {
-				withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'kalyptusssh',
-					usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD']]) {
-					sh 'sshpass -p "$PASSWORD" scp src/bin/Release/PublishOutput/* $USERNAME@109.190.127.175 -p 2222:/cygdrive/c/inetpub/wwwroot/kalyptus/kalyptus-back'
+					sh "cd darkside-back && docker build -t darkside ."
 				}
             }
-		}*/
+		}
     }
 }
