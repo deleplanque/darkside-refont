@@ -1,6 +1,6 @@
 FROM openjdk:8
 
-COPY /var/lib/jenkins/.m2/repository/com/darkzone/darkside/0.0.1-SNAPSHOT/darkside-0.0.1-SNAPSHOT.jar /usr/src/myapp/
+COPY ./target/*.jar /usr/src/myapp/
 RUN chmod +x /usr/src/myapp/*.jar
 RUN ls -lh /usr/src/myapp/
 
