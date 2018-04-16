@@ -26,6 +26,13 @@ pipeline {
 				sh "cd darkside-front && npm run build"
 			}
         }
+	    
+	    stage('ls') {
+			agent { label 'master' }
+			steps {
+				sh "cd darkside-front && ls"
+            }
+		}
 		
         stage('Build - back') {
 			agent { label 'master' }
