@@ -183,7 +183,10 @@ body,
 }
 
 .titre-partie-rouge h1 {
-  font-size: 6vw;
+  font-size: 5vw;
+  color: white;
+  font-family: "Times New Roman";
+  text-transform: uppercase;
 }
 
 .titre-partie-jaune h1 {
