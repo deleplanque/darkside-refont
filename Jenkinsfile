@@ -33,7 +33,13 @@ pipeline {
 			steps {
 				sh "cd darkside-back && mvn clean install"
 			}
-        }   
+        }  
+	            stage('ls') {
+			agent { label 'master' }
+			steps {
+				sh "cd darkside-back && ls -l"
+			}
+        }  
 	            stage('Docker') {
 			agent { label 'master' }
 			steps {
