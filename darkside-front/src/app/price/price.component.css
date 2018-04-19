@@ -49,6 +49,7 @@
 .price-option__cost {
   font-size: 1.5em;
   color: #383838;
+  font-weight: bolder;
 }
 
 .price-option__type {
