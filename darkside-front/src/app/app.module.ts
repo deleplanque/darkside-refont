@@ -13,6 +13,8 @@ import { GoogleMapComponent } from './contact/google-map/google-map.component';
 import { SallesComponent } from './salles/salles.component';
 import { SalleComponent } from './salle/salle.component';
 import {AppRoutingModule} from './app.routing.module';
+import {FaqComponent} from './faq/faq.component';
+import {HomeComponent} from './home/home.component';
 
 
 @NgModule({
@@ -26,7 +28,9 @@ import {AppRoutingModule} from './app.routing.module';
     FooterComponent,
     GoogleMapComponent,
     SallesComponent,
-    SalleComponent
+    SalleComponent,
+    FaqComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,34 @@
+/*.contenue {
+  background: url("../assets/images/backgroundContenue.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+*/
+.filtre {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+
+#about {
+  background: url("../../assets/images/test.jpg");
+  background-size: cover;
+}
+
+#salles {
+  background: url("../../assets/images/escape_2.jpg");
+  background-size: cover;
+}
+
+#price {
+  background: url("../../assets/images/escalier_filtre_3.jpg");
+  background-size: cover;
+}
+
+#map {
+  padding: 0;
+}
+
+.filtre-degrade {
+  background: linear-gradient(black, rgba(0,0,0,0.5), black);
+}
