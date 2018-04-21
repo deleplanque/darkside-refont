@@ -39,7 +39,7 @@ pipeline {
 	            stage('Docker') {
 			agent { label 'master' }
 			steps {
-				sh "cd darkside-back && docker build -t darkside ."
+				sh "cd darkside-front && docker build -t darkside ."
 			}
         }
     }
