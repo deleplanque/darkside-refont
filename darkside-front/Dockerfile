@@ -1,4 +1,4 @@
-FROM node:8.11-alpine as node-angular-cli
+FROM node:9
 
 COPY * /usr/src/darksidefront
 RUN cp -R src /usr/src/darksidefront
