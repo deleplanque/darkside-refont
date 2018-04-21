@@ -24,16 +24,16 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#about">à propos</a>
+          <a class="nav-link" (click)="redirectToAbout()">à propos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#salles">Nos salles</a>
+          <a class="nav-link" (click)="redirectToSalles()">Nos salles</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#price">Tarifs</a>
+          <a class="nav-link" (click)="redirectToTarif()">Tarifs</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
+          <a class="nav-link" (click)="redirectToContact()">Contact</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#" routerLink="/faq" routerLinkActive>FAQ</a>
@@ -55,6 +55,11 @@
             <a class="dropdown-item" target="_blank" href="http://www.europarkindoor.com/fr/">Europark Indoor</a>
             <a class="dropdown-item" target="_blank" href="https://www.megakart.info/">Megakart</a>
           </div>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.facebook.com/darkzoneeuropark/">
+            <img src="../../assets/images/facebook.png" class="img-fluid">
+          </a>
         </li>
       </ul>
 

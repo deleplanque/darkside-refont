@@ -5,7 +5,7 @@ import {HomeComponent} from './home/home.component';
 import {SalleComponent} from './salle/salle.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/accueil', pathMatch: 'prefix' },
+  { path: '', redirectTo: '/accueil', pathMatch: 'full' },
   { path: 'accueil', component: HomeComponent },
   { path: 'salle', component: SalleComponent },
   { path: 'faq', component: FaqComponent }

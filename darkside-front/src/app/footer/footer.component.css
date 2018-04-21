@@ -5,15 +5,17 @@
 
 footer {
   background-color: #1f2835;
+  border-top: solid 4px #CB3B32;
 }
 
 a {
-  color: white;
+  color: white !important;
   text-transform: uppercase;
   font-weight: bolder;
 }
 
 h5 {
-  color: dimgrey;
+  color: #CB3B32;
   font-weight: bold;
 }
+
